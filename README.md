@@ -43,6 +43,53 @@ pip install -e .
 
 ## Usage
 
+### Python API Example
+
+Here's a comprehensive example of using the TikTok Bias Detection API:
+
+```python
+from pipeline import TikTokBiasDetectionPipeline
+
+# Initialize the pipeline
+pipeline = TikTokBiasDetectionPipeline()
+
+# Update weights if needed (optional)
+pipeline.update_weights(
+    text_weight=0.4,
+    video_weight=0.4,
+    audio_weight=0.2,
+    political_weight=0.3,
+    religious_weight=0.3
+)
+
+# Process a batch of videos
+df = pipeline.process_batch(
+    input_csv="path/to/your/data_table.csv", 
+    data_dir="path/to/video/directory",  
+    output_csv="path/to/results.csv"
+)
+
+# Print a summary of the results
+if df is not None:
+    print("\nAnalysis Results Summary:")
+    print(f"Total videos analyzed: {len(df)}")
+    
+    # Get average bias scores
+    political_avg = df['political_bias'].mean()
+    religious_avg = df['religious_bias'].mean()
+    overall_avg = df['overall_bias_score'].mean()
+    
+    print(f"Average political bias: {political_avg:.2f}")
+    print(f"Average religious bias: {religious_avg:.2f}")
+    print(f"Average overall bias: {overall_avg:.2f}")
+    
+    # Count bias categories
+    categories = df['overall_bias_category'].value_counts()
+    print("\nBias category distribution:")
+    for category, count in categories.items():
+        print(f"  {category}: {count}")
+```
+
 ### Command Line Interface
 
 #### Batch Processing
@@ -60,43 +107,6 @@ python main.py --input data/data_table.csv --text-weight 0.4 --video-weight 0.4 
 ```bash
 # Analyze a single video
 python main.py --video path/to/video.mp4 --description "Video description text"
-```
-
-#### Additional Options
-
-```bash
-# Skip audio analysis (faster but less accurate)
-python main.py --input data/data_table.csv --skip-audio
-
-# Use a custom configuration file
-python main.py --input data/data_table.csv --config path/to/config.json
-
-# Save current configuration
-python main.py --save-config my_config.json
-```
-
-### Python API
-
-```python
-from pipeline import TikTokBiasDetectionPipeline
-
-# Initialize the pipeline
-pipeline = TikTokBiasDetectionPipeline()
-
-# Update weights if needed
-pipeline.update_weights(
-    text_weight=0.4,
-    video_weight=0.4,
-    audio_weight=0.2,
-    political_weight=0.6,
-    religious_weight=0.4
-)
-
-# Analyze a single video
-result = pipeline.analyze_single_video("path/to/video.mp4", description="Video description")
-
-# Or process a batch of videos
-df = pipeline.process_batch(input_csv="data/data_table.csv", output_csv="data/results.csv")
 ```
 
 ## Input Format

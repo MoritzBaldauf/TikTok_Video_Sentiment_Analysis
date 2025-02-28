@@ -1,0 +1,44 @@
+# Core Python libraries
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=0.24.0
+
+# Deep Learning and Machine Learning
+torch>=1.10.0
+torchvision>=0.11.0
+transformers>=4.20.0
+
+# Natural Language Processing
+bert-score>=0.3.10
+
+# Computer Vision
+opencv-python>=4.5.0
+Pillow>=8.3.0
+
+# Audio Processing
+librosa>=0.9.0
+moviepy>=1.0.3
+
+# Speech Recognition
+soundfile>=0.10.3
+
+# Utility Libraries
+tqdm>=4.61.0
+
+# Optional but recommended
+scipy>=1.7.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Model-specific dependencies
+# BERT
+tokenizers>=0.10.0
+
+# Video Feature Extraction
+pytorchvideo>=0.1.5
+
+# Potential additional dependencies for VideoMAE
+einops>=0.4.0
+
+# Development and Debugging
+ipython>=7.25.0
