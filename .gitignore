@@ -1,0 +1,12 @@
+# Ignore Data folder and its contents
+/data/
+/src/legacy_code/
+/src/data/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+*.wav

@@ -1,0 +1,7 @@
+{
+    "text_weight": 0.4,
+    "video_weight": 0.4,
+    "audio_weight": 0.2,
+    "political_weight": 0.6,
+    "religious_weight": 0.4
+}
