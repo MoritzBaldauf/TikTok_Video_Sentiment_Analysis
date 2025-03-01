@@ -1,5 +1,3 @@
-# api_test.py - Example of using the TikTok Bias Detection API
-
 from pipeline import TikTokBiasDetectionPipeline
 
 # Initialize the pipeline
@@ -21,7 +19,7 @@ df = pipeline.process_batch(
     output_csv="C:/Hackathon_Backend/data/results_API.csv"
 )
 
-# Print a summary of the results
+# Summary of the results
 if df is not None:
     print("\nAnalysis Results Summary:")
     print(f"Total videos analyzed: {len(df)}")

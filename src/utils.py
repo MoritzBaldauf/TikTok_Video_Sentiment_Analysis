@@ -9,6 +9,7 @@ from pathlib import Path
 
 def is_cuda_available():
     """Check if CUDA is available for GPU acceleration"""
+    # Also runs pretty fast without it
     return torch.cuda.is_available()
 
 def get_device():

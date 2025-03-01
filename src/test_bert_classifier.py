@@ -1,5 +1,3 @@
-#  - Test script for the BERT sequence classifier implementation
-
 import pandas as pd
 from pathlib import Path
 import sys

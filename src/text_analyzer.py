@@ -1,5 +1,3 @@
-# text_analyzer.py - Text-based bias analysis for TikTok videos
-
 import torch
 from transformers import BertTokenizer, BertModel, BertForSequenceClassification
 import numpy as np

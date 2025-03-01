@@ -1,5 +1,3 @@
-# pipeline.py - Main pipeline for TikTok bias detection
-
 import os
 import pandas as pd
 import time

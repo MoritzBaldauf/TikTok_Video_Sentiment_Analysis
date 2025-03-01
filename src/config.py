@@ -1,5 +1,3 @@
-# Configuration settings for the TikTok bias detection pipeline
-
 import os
 import json
 from pathlib import Path
@@ -30,6 +28,7 @@ SPEECH_MODEL = 'facebook/wav2vec2-base-960h'
 SENTIMENT_MODEL = 'distilbert-base-uncased-finetuned-sst-2-english'
 
 # Additional model settings for text analysis
+# We use two pre-trained NLP models, for Political and Regligous sentiment analyisis in the text
 POLITICAL_MODEL_NAME = 'textattack/bert-base-uncased-yelp-polarity'
 RELIGIOUS_MODEL_NAME = 'distilbert-base-uncased-finetuned-sst-2-english'
 

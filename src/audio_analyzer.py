@@ -1,5 +1,3 @@
-# audio_analyzer.py - Audio-based bias analysis for TikTok videos
-
 import os
 import numpy as np
 import librosa
@@ -57,6 +55,7 @@ class AudioBiasAnalyzer:
             self.sentiment_pipeline = None
             
         # Define common speech-to-text errors and corrections
+        # Make text we get from speech a bit more understandable by replacing common mistakes
         self.speech_corrections = {
             'ebasi': 'basic',
             'teraffs': 'tariffs',

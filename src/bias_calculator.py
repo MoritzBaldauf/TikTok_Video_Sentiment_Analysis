@@ -1,5 +1,3 @@
-# bias_calculator.py - Combined bias score calculation for TikTok videos
-
 import pandas as pd
 import numpy as np
 import json

@@ -1,5 +1,3 @@
-# main.py - Entry point for the TikTok bias detection pipeline
-
 import os
 import argparse
 import json
