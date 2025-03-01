@@ -29,6 +29,10 @@ VIDEO_MODEL_NAME = 'MCG-NJU/videomae-base-finetuned-kinetics'
 SPEECH_MODEL = 'facebook/wav2vec2-base-960h'
 SENTIMENT_MODEL = 'distilbert-base-uncased-finetuned-sst-2-english'
 
+# Additional model settings for text analysis
+POLITICAL_MODEL_NAME = 'textattack/bert-base-uncased-yelp-polarity'
+RELIGIOUS_MODEL_NAME = 'distilbert-base-uncased-finetuned-sst-2-english'
+
 # Default weights
 DEFAULT_WEIGHTS = {
     "text_weight": 0.5,
