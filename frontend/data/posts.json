@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": 1,
+        "profile": "/images/propic.jpg",
+        "like": 9766,
+        "comments": 512,
+        "bookmarks": 610,
+        "shares": 218,
+        "description": "Donald Trump appeared to interrupt British PM Keir Starmer as he shut down a question from a journalist about the US President's demand that Canada becomes the 51st state.",
+        "political_bias_category": "Low Bias",
+        "religious_bias_category": "Low Bias",
+        "overall_bias_category": "Low Bias"
+    },
+    {
+        "user_id": 2,
+        "profile": "/images/propic.jpg",
+        "like": 16,
+        "comments": 9,
+        "bookmarks": 3,
+        "shares": 4,
+        "description": "In Singapore? 88-year-old elderly worker at foodcourt impress tourists??",
+        "political_bias_category": "Minimal Bias",
+        "religious_bias_category": "Minimal Bias",
+        "overall_bias_category": "Minimal Bias"
+    },
+    {
+        "user_id": 3,
+        "profile": "/images/propic.jpg",
+        "like": 479,
+        "comments": 62,
+        "bookmarks": 49,
+        "shares": 331,
+        "description": "",
+        "political_bias_category": "Minimal Bias",
+        "religious_bias_category": "Minimal Bias",
+        "overall_bias_category": "Minimal Bias"
+    },
+    {
+        "user_id": 4,
+        "profile": "/images/propic.jpg",
+        "like": 51300,
+        "comments": 5943,
+        "bookmarks": 4154,
+        "shares": 1948,
+        "description": "??The Crisis (Wait for it..)",
+        "political_bias_category": "Low Bias",
+        "religious_bias_category": "Minimal Bias",
+        "overall_bias_category": "Low Bias"
+    },
+    {
+        "user_id": 5,
+        "profile": "/images/propic.jpg",
+        "like": 2600000,
+        "comments": 64700,
+        "bookmarks": 241700,
+        "shares": 479200,
+        "description": "Water in Sydney Harbour has turned bright red, with non-toxic plumbers dye believed to be the likely cause.",
+        "political_bias_category": "Low Bias",
+        "religious_bias_category": "Low Bias",
+        "overall_bias_category": "Low Bias"
+    }
+]
