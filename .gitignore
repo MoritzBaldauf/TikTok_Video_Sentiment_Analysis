@@ -1,5 +1,4 @@
 # Ignore Data folder and its contents
-/data/
 /src/legacy_code/
 /src/data/
 
