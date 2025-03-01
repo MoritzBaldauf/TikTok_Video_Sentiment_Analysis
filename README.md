@@ -135,10 +135,10 @@ Weights can be customized through command-line arguments, the Python API, or via
 
 ```json
 {
-  "text_weight": 0.5,
-  "video_weight": 0.3,
+  "text_weight": 0.4,
+  "video_weight": 0.4,
   "audio_weight": 0.2,
-  "political_weight": 0.5,
-  "religious_weight": 0.5
+  "political_weight": 0.3,
+  "religious_weight": 0.3
 }
 ```
