@@ -11,6 +11,8 @@ This project provides a comprehensive pipeline for analyzing TikTok videos for b
 3. **Audio Analysis**: Analyzes speech and audio content for bias using speech recognition and sentiment analysis.
 4. **Combined Scoring**: Combines all analysis components with customizable weights to provide final bias scores.
 
+![plot](./workflow_backend.png)
+
 The pipeline produces both individual component scores and a combined bias score for each video, categorizing them from "Minimal Bias" to "Extreme Bias".
 
 ## Installation
